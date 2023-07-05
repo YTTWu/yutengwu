@@ -22,13 +22,13 @@ const Sidebar = () => (
         </Link>
         <nav>
             <NavLink exact="true" activeclassname="avtive" to="/">
-                <FontAwesomeIcon icon={ faHome } color="#4d4d4e" />
+                <FontAwesomeIcon icon={ faHome } />
             </NavLink>
             <NavLink exact="true" activeclassname="avtive" className="about-link" to="/about">
-                <FontAwesomeIcon icon={ faUser } color="#4d4d4e" />
+                <FontAwesomeIcon icon={ faUser } />
             </NavLink>
             <NavLink exact="true" activeclassname="avtive" className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={ faEnvelope } color="#4d4d4e" />
+                <FontAwesomeIcon icon={ faEnvelope } />
             </NavLink>
         </nav>
         <ul className='nav-linkedin'>

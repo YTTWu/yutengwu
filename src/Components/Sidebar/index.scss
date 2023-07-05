@@ -1,6 +1,7 @@
 .nav-bar {
     // background: #181818;
-    background: #ffffff;
+    // background: #f1faee;
+    background: #edede9;
     width: 140px;
     height: 100%;
     position: absolute;
@@ -35,7 +36,7 @@ nav {
 
     a {
       font-size: 50px;
-      color: #4d4d4e;
+      color: black;
       display: block;
       line-height: 152px;
       height: 152px;
@@ -47,7 +48,7 @@ nav {
       }
 
       &:hover {
-        color: #ffd700;
+        color: black;
 
         svg {
             opacity: 0;
@@ -69,7 +70,7 @@ nav {
         text-align: center;
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+        transition: all 0s ease-out;
       }
 
       &:first-child {
