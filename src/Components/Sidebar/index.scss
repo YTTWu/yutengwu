@@ -13,6 +13,7 @@
 .logo {
     display: block;
     padding: 8px 0;
+    text-decoration: none !important;
 
     img {
         display: block;
@@ -23,6 +24,14 @@
         &.sub-logo {
             width: 100px;
         }
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        margin-top: -10px;
+        font-weight: 600;
+        font-size: 20px;
     }
 }
 
