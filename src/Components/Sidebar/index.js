@@ -10,13 +10,14 @@ import {
     faYoutube,
     faSkype,
   } from '@fortawesome/free-brands-svg-icons'
+import LogoY from '../../assets/images/Y.png'
 
 
 
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo" />
+            <img src={LogoY} alt="logo" />
             <img className='sub-logo' src={LogoSubtitle} alt="slobodan" />
         </Link>
         <nav>

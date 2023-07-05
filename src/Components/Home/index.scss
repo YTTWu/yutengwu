@@ -1,23 +1,25 @@
 .home-page {
     .text-zone {
         position: absolute;
-        left: 30%;
+        left: 20%;
         top: 50%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
     }
     h1 {
-        color: #fff;
+        // color: #fff;
+        color: rgb(0, 0, 0);
         font-size: 62px;
         margin:0;
         font-family: 'Coolvetica';
         font-weight: 400;
+        letter-spacing: 10px;
 
         &::before {
             content: '<h1>';
             font-family: 'La Belle Aurore';
-            color: #ffd700;
+            color: rgb(0, 0, 0);
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
@@ -28,7 +30,7 @@
         &::after {
             content: '<h1/>';
             font-family: 'La Belle Aurore';
-            color: #ffd700;
+            color: rgb(0, 0, 0);
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
@@ -36,23 +38,33 @@
             animation: fadeIn 1s 1s 1.7s backwards;
             opacity: 0.6;
         }
+        ._14 {
+            margin-right: -30px;
+        }
         img {
-            width: 52px;
-            margin-left: 20px;
+            margin:0;
+            margin-top: 10px;
+            width: 100px;
+            margin-left: 10px;
             opacity: 0;
-            height: auto;
+            height: 100%;
             animation: rotateIn 1s linear both;
             animation-delay: 1.4s;
+            margin-bottom: -30px;
+            margin-right: -25px;
+
+
         }
     }
 }
 
 
 h2 {
-    color: #8d8d8d;
+    // color: #8d8d8d;
+    color:rgb(17, 12, 42);
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 21px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -67,9 +79,9 @@ h2 {
     text-decoration: none;
     margin-top: 25px;
     float: left;
-    color:#ffd700;
+    color:rgb(0, 0, 0);;
     animation: fadeIn 1s 2.5s backwards;
-    border: 1px solid #ffd700;
+    border: 1px solid rgb(0, 0, 0);;
     padding: 10px;
     white-space: nowrap;
 

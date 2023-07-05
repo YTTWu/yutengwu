@@ -1,11 +1,12 @@
 import {useState, useEffect} from "react";
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/Y.png'
 import { Link } from 'react-router-dom'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
+import Logo from './Logo'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['y', 'u', 't', 'e', 'n', 'g']
+    const nameArray = [ 'u', 't', 'e', 'n', 'g']
     const jobArray = ['F','u','l','l','-', 's','t','a','c','k', ' ', 'd','e','v','e','l','o','p','e','r']
 
     useEffect(() => {
@@ -23,7 +24,8 @@ const Home = () => {
                     <span className={`${letterClass} _12`}>i, </span>
                     <br />
                     <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>            
+                    <span className={`${letterClass} _14`}>'m</span>
+                                
                     <img src={LogoTitle} alt="developer"/>
                     <AnimatedLetters
                         letterClass={letterClass}
@@ -36,13 +38,14 @@ const Home = () => {
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={jobArray}
-                        idx={21}
+                        idx={20}
 
                     />
                 </h1>
                 <h2>Full-stack Developer / JavaScript / C++ / Python </h2>
                 <Link to="/contact" className="flat-button">Contact me</Link>
             </div>
+            <Logo />
         </div>
     )
 }
