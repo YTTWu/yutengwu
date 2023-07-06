@@ -4,25 +4,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import LogoY from '../../assets/images/Y.png'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 
 
 const Sidebar = () => {
 
-    const [smallScreen, setSmallScreen] = useState(false);
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-    const [isOpne, setIsOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+
+    const [isOpen, setIsOpen] = useState(false);
 
     const [menuPos, setMenuPos] = useState('translateX(-100%)')
 
     const handleResize = () => {
         if (window.innerWidth <= 600) {
-          setSmallScreen(true);
+            setIsSmallScreen(true);
         } else {
-          setSmallScreen(false);
+            setIsSmallScreen(false);
         }
     };
+
+    useEffect(() => {
+        if (window.innerWidth < 600) {
+            setIsSmallScreen(prevValue => (!prevValue))
+        }
+        
+        console.log(isSmallScreen)
+    }, [])
+
+
+    useEffect(() => {
+        if (!isOpen && menuPos === 'translateX(0%)') {
+            setMenuPos('translateX(-100%)');
+        }
+        else if (isOpen && menuPos === 'translateX(-100%)') {
+            setMenuPos('translateX(0%)');
+        }
+        console.log("after" + menuPos)
+    }, [isOpen])
 
     useEffect(() => {
         window.addEventListener("resize", handleResize);
@@ -31,22 +52,8 @@ const Sidebar = () => {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [window.innerWidth])
-
-    useEffect(() => {
-        if (menuPos === 'translateX(-100%)') {
-            setMenuPos('translateX(0%)')
-        }
-        else {
-            setMenuPos('translateX(-100%)')
-        }
-        window.addEventListener("resize", handleResize);
-
-        // Clean up the event listener on component unmount
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        }
-    }, [isOpne])
+    },[window.innerWidth])
+    
 
 
     function handleClick() {
@@ -55,10 +62,10 @@ const Sidebar = () => {
 
     return (
         <div>
-            <button onClick={handleClick} aria-controls="primary-navigation" className='nav-btn' aria-expanded="false">
+            <button onClick={handleClick} className='nav-btn' >
                 <span className='sr-only'>menu</span>
             </button>
-            <div className={`nav-bar ${smallScreen ? 'primary-navigation' : ''}`} style={{transform: menuPos}} >            
+            <div className={` ${isSmallScreen ? 'primary-navigation' : 'nav-bar'}`} style={{transform: menuPos}} >            
                 <Link className='logo' to='/'>
                     <img src={LogoY} alt="logo" />
                     <h1>Yuteng Wu</h1>
