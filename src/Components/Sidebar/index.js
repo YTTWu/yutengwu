@@ -16,13 +16,21 @@ const Sidebar = () => {
 
     const [menuPos, setMenuPos] = useState('translateX(-100%)')
 
+    const handleResize = () => {
+        if (window.innerWidth <= 600) {
+          setSmallScreen(true);
+        } else {
+          setSmallScreen(false);
+        }
+    };
+
     useEffect(() => {
-        window.addEventListener("resize", () => {
-            if (smallScreen <= 600) {
-                setSmallScreen(true)
-            }
-        })
-        
+        window.addEventListener("resize", handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, [window.innerWidth])
 
     useEffect(() => {
