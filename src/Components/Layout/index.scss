@@ -19,7 +19,12 @@
     top: 55px;
 }
 
-
+.top-body {
+    margin-left: 40px;
+}
+.bottom-tags {
+    margin-left: 40px;
+}
 
 .bottom-tag-html {
     margin-left: -40px;
@@ -45,7 +50,7 @@
     .tags{
         font-size: 18px;
         left: 15%;
-        bottom: 0;
+        bottom: 5%;
     }
 
     .top-tags {
