@@ -109,6 +109,7 @@ h2 {
 
 @media (max-width: 468px){
     .home-page{
+        overflow: auto !important; 
         .text-zone {
             
             width: 400px;
