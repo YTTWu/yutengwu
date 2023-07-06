@@ -120,28 +120,13 @@ h2 {
             font-size: 16px;
             font-weight: 600;
             &::before {
-                content: '<h1>';
-                font-family: 'La Belle Aurore';
-                color: rgb(0, 0, 0);
-                font-size: 15px;
-                position: absolute;
-                margin-top: -40px;
-                left: 15px;
-                opacity: 0.6;
+                
+                display: none;
             }
     
             &::after {
-                content: '</h1>';
-                font-family: 'La Belle Aurore';
-                color: rgb(0, 0, 0);
-                font-size: 15px;
-                position: absolute;
-                left: 0;
-                bottom: -15%;
-                margin-top: 18px;
-                margin-left: 20px;
-                animation: fadeIn 1s 1s 1.7s backwards;
-                opacity: 0.6;
+                
+                display: none;
             }
         }
 
