@@ -158,6 +158,7 @@ ul {
         height: 100%;
         background: #edede9;
         z-index: 100;
+        transition: transform 0.8s ease;
     }
     .nav-btn {
         position: absolute;
@@ -169,7 +170,6 @@ ul {
         top: 2rem;
         left: 25px;
         z-index: 9999;
-        transition: transform 0.8s ease;
     }
 }
 

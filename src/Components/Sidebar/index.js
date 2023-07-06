@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import LogoY from '../../assets/images/Y.png'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
@@ -30,8 +30,6 @@ const Sidebar = () => {
         if (window.innerWidth < 600) {
             setIsSmallScreen(prevValue => (!prevValue))
         }
-        
-        console.log(isSmallScreen)
     }, [])
 
 
@@ -42,7 +40,6 @@ const Sidebar = () => {
         else if (isOpen && menuPos === 'translateX(-100%)') {
             setMenuPos('translateX(0%)');
         }
-        console.log("after" + menuPos)
     }, [isOpen])
 
     useEffect(() => {
@@ -52,7 +49,7 @@ const Sidebar = () => {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    },[window.innerWidth])
+    },)
     
 
 
