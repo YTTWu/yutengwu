@@ -32,12 +32,17 @@ const Sidebar = () => {
         else {
             setMenuPos('translateX(-100%)')
         }
+        window.addEventListener("resize", handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        }
     }, [isOpne])
 
 
     function handleClick() {
         setIsOpen(prevValue => (!prevValue));
-
     }
 
     return (
