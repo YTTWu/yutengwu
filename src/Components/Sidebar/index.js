@@ -12,14 +12,14 @@ const Sidebar = () => {
 
     // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
     const [isOpen, setIsOpen] = useState(false);
 
     const [menuPos, setMenuPos] = useState('translateX(-100%)')
 
     const handleResize = () => {
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 768) {
             setIsSmallScreen(true);
         } else {
             setIsSmallScreen(false);
@@ -27,7 +27,7 @@ const Sidebar = () => {
     };
 
     useEffect(() => {
-        if (window.innerWidth < 600) {
+        if (window.innerWidth < 768) {
             setIsSmallScreen(prevValue => (!prevValue))
         }
     }, [])

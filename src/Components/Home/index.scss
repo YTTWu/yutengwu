@@ -90,3 +90,34 @@ h2 {
         background: #ffd700;
     }
 }
+
+
+@media (max-width: 768px){
+    .home-page{
+        .text-zone {
+            
+            width: 600px;
+            position: absolute;
+            top: 25%;
+            left: 14%;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 468px){
+    .home-page{
+        .text-zone {
+            
+            width: 400px;
+            position: absolute;
+            top: 35%;
+            left: 14%;
+        }
+        h1 {
+            font-size: 15px;
+        }
+    }
+}
