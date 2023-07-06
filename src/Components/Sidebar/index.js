@@ -40,7 +40,7 @@ const Sidebar = () => {
         else if (isOpen && menuPos === 'translateX(-100%)') {
             setMenuPos('translateX(0%)');
         }
-    }, [isOpen])
+    }, [isOpen, menuPos])
 
     useEffect(() => {
         window.addEventListener("resize", handleResize);
