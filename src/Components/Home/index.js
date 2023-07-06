@@ -42,7 +42,7 @@ const Home = () => {
 
                     />
                 </h1>
-                <h2>Full-stack Developer / JavaScript / C++ / Python </h2>
+                <h2> JavaScript / C++ / Python / HTML/CSS / React.js / Vue/js </h2>
                 <Link to="/contact" className="flat-button">Contact me</Link>
             </div>
             <Logo />
