@@ -183,14 +183,25 @@ ul {
 
     .nav-btn {
         position: absolute;
-        background-size: cover;
         border: 0;
         width: 2.5rem;
         aspect-ratio: 1;
         top: 2rem;
         left: 25px;
         z-index: 9999;
-        border: 10px solid black;
+        border: none;
+    }
+    .nav-btn-img-open {
+        background: url('../../assets/images/menu_btn.svg');
+        background-size: cover;
+    }
+    
+    .nav-btn-img-close {
+        background: url('../../assets/images/close.png');
+        background-size: cover;
+        width: 4rem;
+        top: 0.1rem;
+        left: 5px;
     }
 }
 
