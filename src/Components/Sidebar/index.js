@@ -5,7 +5,6 @@ import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import LogoY from '../../assets/images/Y.png'
 import { useEffect, useState } from 'react'
-import openImg from '../../assets/images/menu_btn.svg'
 
 
 
