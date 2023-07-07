@@ -19,6 +19,7 @@ const Home = () => {
 
     return (
         <>
+            <Loader type="pacman" />
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>
@@ -49,7 +50,7 @@ const Home = () => {
                 </div>
                 <Logo />
             </div>
-            <Loader type="pacman" />  
+            
         </>
         
     )
