@@ -194,11 +194,8 @@ ul {
     .nav-btn-img-open {
         background: url('../../assets/images/menu_btn.svg');
         background-size: cover;
-
-        &:active{
-            outline: none;
-            -webkit-tap-highlight-color: transparent;
-        }
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
     }
     
     .nav-btn-img-close {
@@ -209,7 +206,6 @@ ul {
         top: 14px;
         outline: none;
         -webkit-tap-highlight-color: transparent;
-
     }
 }
 
