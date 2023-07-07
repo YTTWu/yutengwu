@@ -207,11 +207,8 @@ ul {
         width: 3.5rem;
         left: 21px;
         top: 14px;
-
-        &:active {
-            outline: none;
-            -webkit-tap-highlight-color: transparent;
-        }
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
 
     }
 }
