@@ -5,18 +5,13 @@ import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import LogoY from '../../assets/images/Y.png'
 import { useEffect, useState } from 'react'
+import openImg from '../../assets/images/menu_btn.svg'
 
 
 
-const Sidebar = () => {
-
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+const Sidebar = (props) => {
 
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const [menuPos, setMenuPos] = useState('translateX(-100%)')
 
     const handleResize = () => {
         if (window.innerWidth <= 768) {
@@ -32,16 +27,6 @@ const Sidebar = () => {
         }
     }, [])
 
-
-    useEffect(() => {
-        if (!isOpen && menuPos === 'translateX(0%)') {
-            setMenuPos('translateX(-100%)');
-        }
-        else if (isOpen && menuPos === 'translateX(-100%)') {
-            setMenuPos('translateX(0%)');
-        }
-    }, [isOpen, menuPos])
-
     useEffect(() => {
         window.addEventListener("resize", handleResize);
 
@@ -50,19 +35,15 @@ const Sidebar = () => {
             window.removeEventListener("resize", handleResize);
         };
     },)
-    
-
-
-    function handleClick() {
-        setIsOpen(prevValue => (!prevValue));
-    }
 
     return (
         <div>
-            <button onClick={handleClick} className='nav-btn' >
+            <button onClick={props.handleClick} 
+                className={`nav-btn ${props.isOpen ? 'nav-btn-img-close' : 'nav-btn-img-open'}`}
+                >
                 <span className='sr-only'>menu</span>
             </button>
-            <div className={` ${isSmallScreen ? 'primary-navigation' : 'nav-bar'}`} style={{transform: menuPos}} >            
+            <div className={` ${isSmallScreen ? 'primary-navigation' : 'nav-bar'}`} style={{transform: props.menuPos}} >            
                 <Link className='logo' to='/'>
                     <img src={LogoY} alt="logo" />
                     <h1>Yuteng Wu</h1>
