@@ -178,6 +178,8 @@ ul {
         --gap: 1px;
         a {
             margin-bottom: -40px;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
         }
     }
 
