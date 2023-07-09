@@ -15,6 +15,7 @@ const Logo = () => {
     useEffect(() => {
         anime({
             targets: bgRef.current,
+            delay: 1000,
             duration: 10000,
             opacity: 1,
         });
@@ -22,7 +23,7 @@ const Logo = () => {
         anime({
             targets: outlineLogoRef.current,
             delay: 1000,
-            duration: 3500,
+            duration: 2500,
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'linear',
         });
@@ -30,7 +31,7 @@ const Logo = () => {
         anime({
             targets: inlineLogoRef.current,
             delay: 2000,
-            duration: 5500,
+            duration: 2500,
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'linear',
         });
@@ -38,7 +39,7 @@ const Logo = () => {
         anime({
             targets: solidLogoRef.current,
             duration: 6000,
-            delay: 7500,
+            delay: 4500,
             opacity: 1,
         });
     }, []);
