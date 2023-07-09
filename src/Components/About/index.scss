@@ -3,12 +3,32 @@
     justify-content: center;
     align-items: center;
     margin-top: 250px;
+    animation: fade-in 1s ease-in-out 2s forwards;
+    opacity: 0;
+    .about-america {    
+        background-image: url('../../assets/images/america.jpg');
+        border: 2px solid black;
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 768px) {
     .about {
         .about-america {
             width: 300px;
+            height: 150px;
         }
     }
 }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
