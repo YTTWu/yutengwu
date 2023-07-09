@@ -219,23 +219,17 @@ ul {
         background: #edede9;
         z-index: 100;
         transition: transform 0.3s ease;
-        img {
-          outline: none;
-          -webkit-tap-highlight-color: transparent;
-          &:focus {
+        Link{
+          img {
             outline: none;
             -webkit-tap-highlight-color: transparent;
+            &:focus {
+              outline: none;
+              
+            }
           }
         }
-
-        Link {
-          outline: none;
-          -webkit-tap-highlight-color: transparent;
-          &:focus {
-            outline: none;
-            -webkit-tap-highlight-color: transparent;
-          }
-        }
+        
     }
 
     nav {
