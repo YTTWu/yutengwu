@@ -3,9 +3,9 @@ import LogoTitle from '../../assets/images/Y.png'
 import { Link } from 'react-router-dom'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
 import Loader from 'react-loaders'
 import Brand from './Brand'
+import Me from './Me'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = [ 'u', 't', 'e', 'n', 'g']
@@ -50,7 +50,7 @@ const Home = () => {
                     <h2> JavaScript / C++ / Python / HTML/CSS / React.js / Node.js </h2>
                     <Link to="/contact" className="flat-button">Contact me</Link>
                 </div>
-                <Logo />
+                <Me />
             </div>
             
         </>
