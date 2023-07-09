@@ -1,8 +1,22 @@
 .home-me {
-    width: 170px;
+    width: 450px;
     position: absolute;
-    bottom: 40px;
-    left: 12rem;
+    bottom: 30rem;
+    right: 15rem;
     border: none;
     border-radius: 10px;
+    animation: fadeIn 8s;
+}
+
+
+@media (max-width: 768px) {
+    .home-me {
+        width: 170px;
+        position: absolute;
+        bottom: 40px;
+        left: 12rem;
+        border: none;
+        border-radius: 10px;
+        animation: fadeIn 8s ease-in forwards;
+    }
 }
