@@ -8,9 +8,9 @@ const Contact = () => {
             <Loader type="pacman" />
             <Brand />
             <div className='message'>
-                <h2>Hi, thank you for visiting</h2>
-                <h2>Email: yutengwu.dev@gmail.com</h2>
-                <h2>Cell: 7028583382</h2>
+                <h2 className='text'>Hi, thank you for visiting</h2>
+                <h2 className='text'>Email: yutengwu.dev@gmail.com</h2>
+                <h2 className='text'>Cell: 7028583382</h2>
             </div>
             
         </>

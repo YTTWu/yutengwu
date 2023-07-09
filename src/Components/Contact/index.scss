@@ -2,3 +2,13 @@
     text-align: center;
     margin-top: 500px;
 }
+
+
+@media (max-width: 768px) {
+    .message {
+        margin-top: 300px;                
+    }
+    .text {
+        font-size: 15px;
+    }
+}

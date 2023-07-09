@@ -1,6 +1,14 @@
-.About {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 250px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        .about-america {
+            width: 300px;
+        }
+    }
 }
