@@ -5,6 +5,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 import Loader from 'react-loaders'
+import Brand from './Brand'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = [ 'u', 't', 'e', 'n', 'g']
@@ -20,6 +21,7 @@ const Home = () => {
     return (
         <>
             <Loader type="pacman" />
+            <Brand />
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>
