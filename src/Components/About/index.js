@@ -8,8 +8,8 @@ const About = () => {
             <Loader type="pacman" />
             <Brand />
             <div className='about'>
-                <a href='https://www.youtube.com/watch?v=v_ru-UPLNN4' target="_blank" rel="america, f-yeah">
-                    <img className='about-america'src={America} ></img>
+                <a href='https://www.youtube.com/watch?v=v_ru-UPLNN4' target="_blank" rel="noreferre">
+                    <img className='about-america'src={America} alt="video"></img>
                 </a>
             </div>
            
