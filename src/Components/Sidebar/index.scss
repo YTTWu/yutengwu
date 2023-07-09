@@ -220,11 +220,11 @@ ul {
         z-index: 100;
         transition: transform 0.3s ease;
 
-        img {
-            // outline: none;
-            // -webkit-tap-highlight-color: transparent;
-            background-color: transparent;
-            border: none;
+        .logo {
+          &:focus {
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+          }
         }
     }
 
