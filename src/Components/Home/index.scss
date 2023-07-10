@@ -107,7 +107,7 @@ h2 {
     }
 }
 
-@media (max-width: 1700px) {
+@media (min-width: 1401px) and (max-width: 1700px) {
     .home-page {
         .text-zone{
             h1 {
@@ -152,7 +152,7 @@ h2 {
 }
 
 
-@media (max-width: 1400px){
+@media (min-width: 421px) and (max-width: 1400px){
     .home-page{
         .text-zone {
             width: 900px;
