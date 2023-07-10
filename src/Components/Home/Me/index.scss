@@ -9,7 +9,7 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 468px) {
     .home-me {
         width: 170px;
         position: absolute;
@@ -23,21 +23,3 @@
 
 
 
-@media (min-width: 1401px) and (max-width: 1700px) {
-    .home-me {
-        width: 400px;
-        position: absolute;
-        bottom: 30%;
-        right: 15rem;
-    }
-}
-
-@media (min-width: 421px) and (max-width: 1400px){
-    .home-me {
-        width: 350px;
-        position: absolute;
-        bottom: 10%;
-        left: 35%;
-        
-    }
-}

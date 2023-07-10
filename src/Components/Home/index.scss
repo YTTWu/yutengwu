@@ -107,18 +107,8 @@ h2 {
     }
 }
 
-@media (min-width: 1401px) and (max-width: 1700px) {
-    .home-page {
-        .text-zone{
-            h1 {
-                font-size: 40px;
-                font-weight: 400;
-            }
-        }
-    }
-}
 
-@media (max-width: 420px){
+@media (max-width: 468px){
     .home-page{
         .text-zone {
             width: 400px;
@@ -152,35 +142,3 @@ h2 {
 }
 
 
-@media (min-width: 421px) and (max-width: 1400px){
-    .home-page{
-        .text-zone {
-            width: 900px;
-            position: absolute;
-            top: 30%;
-            left: 200px;
-        }
-        h1 {
-            font-size: 60px;
-            font-weight: 200;
-            &::before {
-                
-                display: none;
-            }
-    
-            &::after {
-                
-                display: none;
-            }
-        }
-
-        h2 {
-            width: 900px;
-            font-size: 20px;
-        }
-
-        .flat-button {
-            font-size: 10px;
-        }
-    }
-}
