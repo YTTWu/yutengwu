@@ -5,7 +5,7 @@ import brand from '../../../assets/images/YutengWu3D.png'
 const Brand = () => {
     return (
         <Link to='/'>
-            <img className="layout-brand" src={brand}></img>
+            <img className="layout-brand" src={brand} alt='yuteng'></img>
             {/* <svg
             id="svg"
             version="1.1"
