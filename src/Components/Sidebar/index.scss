@@ -211,7 +211,7 @@ ul {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
     .primary-navigation {
         position: fixed;
         width: 140px;
@@ -241,6 +241,8 @@ ul {
         -webkit-tap-highlight-color: transparent;
     }
 }
+
+
 
 
 
