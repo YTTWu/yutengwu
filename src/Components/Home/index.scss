@@ -91,20 +91,181 @@ h2 {
     }
 }
 
-
-@media (max-width: 975px){
-    .home-page{
+@media (min-width: 1920) {
+    .home-page {
         .text-zone {
-            
-            width: 600px;
             position: absolute;
-            top: 25%;
-            left: 14%;
+            left: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 900px;
+            max-height: 90%;
+        }
+        h1 {
+            // color: #fff;
+            color: rgb(0, 0, 0);
+            font-size: 62px;
+            margin:0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            letter-spacing: 10px;
+    
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                position: absolute;
+                margin-top: -40px;
+                left: 15px;
+                opacity: 0.6;
+            }
+    
+            &::after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                position: absolute;
+                margin-top: 18px;
+                margin-left: 20px;
+                animation: fadeIn 1s 1s 1.7s backwards;
+                opacity: 0.6;
+            }
+            ._14 {
+                margin-right: -30px;
+            }
+            img {
+                margin:0;
+                margin-top: 10px;
+                width: 100px;
+                margin-left: 10px;
+                opacity: 0;
+                height: 100%;
+                animation: rotateIn 1s linear both;
+                animation-delay: 1.4s;
+                margin-bottom: -30px;
+                margin-right: -25px;
+    
+    
+            }
+        }
+    }
+    
+    
+    h2 {
+        // color: #8d8d8d;
+        color:rgb(17, 12, 42);
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 21px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    
+    
+    .flat-button {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        margin-top: 25px;
+        float: left;
+        color:rgb(0, 0, 0);;
+        animation: fadeIn 1s 2.5s backwards;
+        border: 1px solid rgb(0, 0, 0);;
+        padding: 10px;
+        white-space: nowrap;
+    
+        &:hover {
+            color: black;
+            background: #ffd700;
+        }
+    }
+}
+
+@media(min-width: 468px) and (max-width: 1000px)
+{
+    .home-page {
+        .text-zone {
+            left: 22%;
+            top: 30%;
+            transform: translateY(-50%);
+            width: 490px;
+            max-height: 90%;
+        }
+        h1 {
+            font-size: 32px;
+            font-family: 'Coolvetica';   
+        }
+    }
+    
+    
+    h2 {
+        // color: #8d8d8d;
+        color:rgb(17, 12, 42);
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 21px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    
+    
+    .flat-button {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        margin-top: 25px;
+        float: left;
+        color:rgb(0, 0, 0);;
+        animation: fadeIn 1s 2.5s backwards;
+        border: 1px solid rgb(0, 0, 0);;
+        padding: 10px;
+        white-space: nowrap;
+    
+        &:hover {
+            color: black;
+            background: #ffd700;
+        }
+    }
+
+}
+
+@media(min-width: 1001px) and (max-width: 1919px)
+{
+    .home-page {
+        .text-zone {
+            left: 25%;
+            top: 30%;
+            width: 550px;
+        }
+        h1 {
+            font-size: 42px;
+        }
+    }
+    
+}
+
+
+@media(min-width: 469px) and (max-width: 800px)
+{
+    .home-page {
+        .text-zone {
+            left: 10%;
+            top: 30%;
+            width: 550px;
         }
         h1 {
             font-size: 30px;
         }
     }
+    
 }
 
 
@@ -114,7 +275,7 @@ h2 {
             width: 400px;
             position: absolute;
             top: 35%;
-            left: 8%;
+            left: 5%;
         }
         h1 {
             font-size: 20px;

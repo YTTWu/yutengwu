@@ -40,17 +40,17 @@ const Layout = () => {
                 handleClick={handleClick}
                 isOpen={isOpen}/>
             <div className='page'>
-                <span className='tags top-tags'>
+                {/* <span className='tags top-tags'>
                     &lt;html&gt;
                     <br />
                     <span className='top-body'>&lt;body&gt;</span>
-                </span>
+                </span> */}
                 <Outlet />
-                <span className='tags bottom-tags'>
+                {/* <span className='tags bottom-tags'>
                     &lt;/body&gt;
                     <br />
                     <span className='bottom-tag-html'>&lt;/html&gt;</span>
-                </span>
+                </span> */}
             </div>
         </div>
     )

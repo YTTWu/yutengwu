@@ -1,20 +1,36 @@
 .home-me {
     width: 450px;
     position: absolute;
-    bottom: 30rem;
-    right: 15rem;
+    bottom: 15%;
+    right: 10%;
     border: none;
     border-radius: 10px;
     animation: fadeIn 8s;
 }
 
+@media(min-width: 468px) and (max-width: 1920px)
+{
+    .home-me {
+        width: 300px;
+        bottom: 0;
+        left: 35%;
+    }
+}
+@media(min-width: 469px) and (max-width: 800px)
+{
+    .home-me {
+        width: 300px;
+        bottom: 0;
+        left: 30%;
+    }
+}
 
 @media (max-width: 468px) {
     .home-me {
         width: 170px;
         position: absolute;
         bottom: 40px;
-        left: 12rem;
+        left: 11rem;
         border: none;
         border-radius: 10px;
         animation: fadeIn 8s ease-in forwards;

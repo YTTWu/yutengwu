@@ -1,10 +1,12 @@
 import './index.scss'
 import { Link } from 'react-router-dom'
+import brand from '../../../assets/images/YutengWu3D.png'
 
 const Brand = () => {
     return (
         <Link to='/'>
-            <svg
+            <img className="layout-brand" src={brand}></img>
+            {/* <svg
             id="svg"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +158,7 @@ const Brand = () => {
                     <path id="path8" d="" stroke="none" fill="#100d83c" >
                     </path>
                 </g>
-            </svg>
+            </svg> */}
         
         </Link>
         
