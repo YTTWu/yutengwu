@@ -274,8 +274,8 @@ h2 {
         .text-zone {
             width: 400px;
             position: absolute;
-            top: 35%;
-            left: 5%;
+            top: 25%;
+            left: 6%;
         }
         h1 {
             font-size: 20px;
@@ -292,12 +292,13 @@ h2 {
         }
 
         h2 {
-            width: 300px;
-            font-size: 13px;
+            font-size: 15px;
         }
-
         .flat-button {
             font-size: 10px;
+            position: absolute;
+            left: 28%;
+            top: 280px;
         }
     }
 }
