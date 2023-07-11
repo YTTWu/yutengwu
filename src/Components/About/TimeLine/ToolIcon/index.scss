@@ -1,0 +1,15 @@
+.icon {
+    // width: 90px;
+    // height: 40px;
+    min-width: 110px;
+    max-width: 150px;
+    background-color: #b8dbed;
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

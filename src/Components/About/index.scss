@@ -1,17 +1,36 @@
 .about {
+    overflow: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 450px;
     animation: fade-in 1s ease-in-out 2s forwards;
     opacity: 0;
-    .about-america {    
-        background-image: url('../../assets/images/america.jpg');
-        border: 2px solid black;
-        background-size: cover;
-        width: 600px;
-        height: 400px;
-    }
+    
+}
+
+.about-breakline{
+  width: 100%;
+  border: 3px solid black;
+  margin-bottom: 20px;
+}
+
+.about-introduction {
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: -250px;
+    visibility: hidden;
+  }
+
+.show-delayed {
+  visibility: visible;
+  animation: fade-in 1s ease-in-out 0s forwards;
 }
 
 @media (max-width: 468px) {
@@ -30,5 +49,7 @@
     100% {
       opacity: 1;
     }
-  }
+}
+
+
   

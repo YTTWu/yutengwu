@@ -1,0 +1,66 @@
+.vertical-timeline {
+    .vertical-timeline-element-content {
+        border: 5px solid black;
+        border-radius: 15px;
+        box-shadow: 1 1px 1px 0 red;
+        font-family: 'Courier New', Courier, monospace;
+        
+        .date {
+            font-size: 20px !important; 
+            color: black !important;
+            font-weight: bold !important;
+        }
+    }
+}
+.timeline-element-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    
+    .timeline-element-format-icon {
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .icon_ {
+            
+            margin-right: 120px; /* Adjust the spacing between the icons */
+        }
+
+        .icon:last-child {
+            margin-right: 0; /* Remove the margin from the last icon */
+        }
+    }
+}
+
+#description {
+    font-weight: bold;
+}
+
+.vertical-timeline-element-title {
+    font-size: 30px;
+}
+
+
+.vertical-timeline-element-subtitle {
+    font-size: 15px;
+}
+
+// .description {
+//     font-size: 30px;
+// }
+
+.timeline{
+    #description {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
