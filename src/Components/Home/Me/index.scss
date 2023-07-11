@@ -1,11 +1,11 @@
 .home-me {
     width: 450px;
-    position: absolute;
-    bottom: 15%;
-    right: 10%;
-    border: none;
-    border-radius: 10px;
-    animation: fadeIn 8s;
+    // position: absolute;
+    // bottom: 15%;
+    // right: 10%;
+    // border: none;
+    // border-radius: 10px;
+    // animation: fadeIn 8s;
 }
 
 @media(min-width: 468px) and (max-width: 1920px)
@@ -27,13 +27,12 @@
 
 @media (max-width: 468px) {
     .home-me {
-        width: 170px;
         position: absolute;
         bottom: 0;
         left: 30%;
         border: none;
         border-radius: 10px;
-        animation: fadeIn 8s ease-in forwards;
+        animation: fadeIn 3s ease-in forwards;
     }
 }
 

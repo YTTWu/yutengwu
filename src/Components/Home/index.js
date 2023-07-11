@@ -50,7 +50,9 @@ const Home = () => {
                     <h2> JavaScript / C++ / Python / HTML/CSS / React.js / Node.js </h2>
                     <Link to="/contact" className="flat-button">Contact me</Link>
                 </div>
-                <Me />
+                <div>
+                    <Me />
+                </div>
             </div>
             
         </>
