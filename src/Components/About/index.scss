@@ -8,7 +8,7 @@
 
     .about-intro-section {
       display: flex;
-      justify-content: end;
+      // justify-content: flex-end;
       height: 1000px;
       margin-top: -250px;
     }
@@ -47,7 +47,6 @@
         }
         .about-intro-section {
           display: flex;
-          justify-content: end;
           height: 500px;
           margin-top: -250px;
           margin-bottom: 50px;
