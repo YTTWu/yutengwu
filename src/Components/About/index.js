@@ -9,17 +9,10 @@ import Typed from 'react-typed'
 
 const About = () => {
   const [showIntro, setShowIntro] = useState(false);
-  const [isFinished, setIsFinished] = useState(false);
   
   const myIntro = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor ligula, 
   egestas quis tellus sed, scelerisque porta justo. Proin condimentum nulla vel augue fringilla, vel 
   varius justo viverra. Etiam sodales dolor non nisl eleifend iaculis. `
-  
-  
-  const handleIntroComplete = () => {
-    setIsFinished(true);
-  }
-
   
   useEffect(() => {
     const timer = setTimeout(() => {
