@@ -36,21 +36,26 @@ const About = () => {
         <div>
             <Loader type="pacman" />
             <Brand />
-            <p className='about-introduction'>
-              {showIntro && (
-                <Typed
-                  strings={[ myIntro ]}
-                  typeSpeed={40} // Set the typing speed in milliseconds
-                />
-              )}
-            </p>
-            
             
             <div className='about'>
-            <div className='about-breakline'/>
+              <div className='about-intro-section'>
+                <div>
+                  <Logo />
+                </div>
+                <div className='about-introduction'>
+                  {showIntro && (
+                    <Typed
+                      strings={[ myIntro ]}
+                      typeSpeed={40}/>
+                  )}                
+                </div>
+              </div>
+              
+              <div className='about-breakline'/>
+              <div>
                 <TimeLine />
-            </div>
-            <Logo />
+              </div>
+            </div>                        
         </div>
         
        

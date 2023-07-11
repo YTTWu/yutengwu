@@ -6,7 +6,7 @@
    height: 609px;
    opacity: 0;
    position: absolute;
-   top: -60%;
+   top: -40%;
    right: auto;
    bottom: 0;
    left: auto;
@@ -40,11 +40,11 @@
    
  }
  
- @media (max-width: 468px) {
+ @media (max-width: 466px) {
   .logo-container {
     width: 250px;
     height: 409px;
     left: 18%;
-    top: -30%;
+    top: -50%;
   }
  }
