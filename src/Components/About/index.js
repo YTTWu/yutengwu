@@ -41,7 +41,6 @@ const About = () => {
                 <Typed
                   strings={[ myIntro ]}
                   typeSpeed={40} // Set the typing speed in milliseconds
-                  onComplete={handleIntroComplete}
                 />
               )}
             </p>
