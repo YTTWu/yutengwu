@@ -3,8 +3,9 @@ import Loader from 'react-loaders'
 import Brand from '../Home/Brand'
 import Logo from './Logo'
 import TimeLine from './TimeLine'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Typed from 'react-typed'
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 
 const About = () => {
@@ -32,6 +33,21 @@ const About = () => {
         clearTimeout(showDelayed);
       };
     }, []);
+
+    const motionRef = useRef(null);
+    const isInView = useInView(motionRef);
+
+    const mainControls = useAnimation();
+    const slideControls = useAnimation();
+    
+    useEffect(() => {
+      console.log(isInView)
+        if (isInView) {
+            mainControls.start("visible");
+            slideControls.start("visible");
+        }
+    }, [isInView])
+
     return(
         <div>
             <Loader type="pacman" />
@@ -52,10 +68,16 @@ const About = () => {
               </div>
               
               <div className='about-breakline'/>
-              <div>
-                <TimeLine />
+              <div >
+                   <TimeLine />
               </div>
-            </div>                        
+              
+            </div>  
+            <footer>
+              <h3>
+                All rights reservered
+              </h3>
+            </footer>                      
         </div>
         
        
