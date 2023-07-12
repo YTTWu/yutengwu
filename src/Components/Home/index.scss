@@ -263,20 +263,26 @@ h2 {
         justify-content: center;
         
         .text-zone {
-            width: 200px;
-            margin-top: 140px;
+            width: 180px;
+            margin-top: 100px;
+            margin-left: 10px;
         }
 
         h1 {
-            font-size: 18px;
-
+            font-size: 15px;
+            &::before {
+                display: none;
+            }
             &::after {
                 display: none;
+            }
+            img {
+                width: 80px;
             }
         }
 
         h2 {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         .flat-button {
@@ -284,8 +290,7 @@ h2 {
         }
 
         img {
-            width: 180px;
-            margin-top: -100px;
+            width: 140px;
         }
     }
 }
