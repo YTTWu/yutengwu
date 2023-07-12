@@ -69,7 +69,7 @@ const TimeLine = () => {
                             
                             <div ref={(element) => motionRefs.current.push(element)} >
                             <motion.div
-                                
+                                className={motion}
                                 variants={{
                                     hidden: {opacity: 0, y: 75},
                                     visible: {opacity: 1, y: 0},
@@ -118,14 +118,14 @@ const TimeLine = () => {
                                 }}
                                 initial="hidden"
                                 animate={slideControls}
-                                transition= {{ duration: 3.5, delay: 0.2, ease: "easeIn"}}
+                                transition= {{ duration: 2.0, delay: 0.2, ease: "easeIn"}}
                                 style={{
                                     position: "absolute",
                                     top:4,
                                     bottom: 4,
                                     left:0,
                                     right:0,
-                                    background: "yellow",
+                                    background: "#EEF1BD",
                                     zIndex: 20,
                                 }}
                                 >
@@ -157,7 +157,7 @@ export default TimeLine
 
 
 
-{/* <VerticalTimeline lineColor={ 'yellow' }>
+/* <VerticalTimeline lineColor={ 'yellow' }>
                 {
                     
                     timelineData.map((eachData, index) => {
@@ -215,4 +215,4 @@ export default TimeLine
                         )
                     })
                 }
-                </VerticalTimeline> */}
+                </VerticalTimeline> */

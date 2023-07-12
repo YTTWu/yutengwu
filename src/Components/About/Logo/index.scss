@@ -39,6 +39,17 @@
    stroke-width: 10;
    
  }
+
+ @media (min-width: 467px) and (max-width: 1167px) {
+  .logo-container {
+    width: 300px;
+    height: 409px;
+    left: 5%;
+    top: -52%;
+    padding-top: -100px;
+  }
+
+ }
  
  @media (max-width: 466px) {
   .logo-container {

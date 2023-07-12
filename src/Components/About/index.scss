@@ -18,9 +18,11 @@
 }
 
 .about-breakline{
-  width: 100%;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 80%;
   border: 3px solid black;
-  margin-bottom: 20px;
+  margin-bottom: 250px;
 }
 
 .about-introduction {
@@ -28,7 +30,7 @@
     width: 600px;
     height: 500px;
     font-size: 40px;
-    border: 1px solid black;
+    // border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -41,18 +43,52 @@
   animation: fade-in 1s ease-in-out 0s forwards;
 }
 
+@media (min-width: 467px) and (max-width: 1167px) {
+  .about {
+    
+    .about-intro-section {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      margin-top: -210px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .about-breakline{
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 80%;
+  border: 3px solid black;
+  margin-bottom: 90px;
+  }
+
+  .about-introduction {
+  margin-top: 150px;
+  font-size: 20px;
+  height: 300px;
+  width: 400px;
+  }
+}
+
+
+
 @media (max-width: 466px) {
     .about {
-        .about-america {
-            width: 300px;
-            height: 150px;
-        }
         .about-intro-section {
           display: flex;
           height: 500px;
           margin-top: -250px;
           margin-bottom: 50px;
         }
+    }
+
+    .about-breakline{
+      margin-left: auto ;
+      margin-right: auto ;
+      width: 80%;
+      border: 3px solid black;
+      margin-bottom: 90px;
     }
 
     .about-introduction {

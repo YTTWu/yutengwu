@@ -72,6 +72,7 @@
             border-radius: 15px;
             box-shadow: 10px 10px 10px #BEBBBB;
             font-family: 'Courier New', Courier, monospace;
+            width: 280px;
             
             .date {
                 font-size: 20px !important; 
@@ -87,12 +88,12 @@
         height: 100%;
         
         .timeline-element-format-icon {
-            height: 30px;
-            width: 300px;
+            height: 100px;
+            width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: flex-start;
-            align-items: center;
-    
+            
             .icon_ {
                 
                 margin-right: 120px; /* Adjust the spacing between the icons */
@@ -118,3 +119,4 @@
     }
     
 }
+
