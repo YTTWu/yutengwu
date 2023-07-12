@@ -263,50 +263,9 @@ h2 {
         justify-content: center;
         
         .text-zone {
-            width: 180px;
-            margin-top: 100px;
-            margin-left: 10px;
-        }
-
-        h1 {
-            font-size: 15px;
-            &::before {
-                display: none;
-            }
-            &::after {
-                display: none;
-            }
-            img {
-                width: 80px;
-            }
-        }
-
-        h2 {
-            font-size: 12px;
-        }
-
-        .flat-button {
-            font-size: 10px;
-        }
-
-        img {
-            width: 140px;
-        }
-    }
-}
-
-
-@media (max-width:466px) and (min-height: 670px)
-{
-    .home-page{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        .text-zone {
-            width: 200px;
-            margin-top: 100px;
-            margin-left: 10px;
+            width: 210px;
+            margin-top: 150px;
+            margin-left: 15px;
         }
 
         h1 {
@@ -328,6 +287,50 @@ h2 {
 
         .flat-button {
             font-size: 10px;
+            margin-left: 35px;
+        }
+
+        img {
+            width: 140px;
+            bottom: 0;
+        }
+    }
+}
+
+
+@media (max-width:466px) and (min-height: 670px)
+{
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .text-zone {
+            width: 210px;
+            margin-top: 130px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            font-size: 25px;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+            img {
+                width: 80px;
+            }
+        }
+
+        h2 {
+            font-size: 19px;
+        }
+
+        .flat-button {
+            font-size: 15px;
+            margin-left: 28px;
         }
 
         img {
