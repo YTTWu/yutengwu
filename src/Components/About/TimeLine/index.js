@@ -7,7 +7,6 @@ import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ToolIcon from './ToolIcon';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react'
-import useLater from './useLater';
 
 const TimeLine = () => {
     let iconStyle = {background: "#ffd700"}
@@ -36,7 +35,7 @@ const TimeLine = () => {
             slideControls.start("visible");
         }
         
-    }, [isInView,mainControls,slideControls])
+    }, [isInView, mainControls, slideControls])
 
   
 
