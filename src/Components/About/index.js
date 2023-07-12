@@ -73,11 +73,7 @@ const About = () => {
               </div>
               
             </div>  
-            <footer>
-              <h3>
-                All rights reservered
-              </h3>
-            </footer>                      
+            <div className='about-footer'></div>                     
         </div>
         
        

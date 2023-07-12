@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom' 
 import Sidebar from '../Sidebar'
 import './index.scss'
+import Footer from './Footer'
 
 
 
@@ -34,25 +35,31 @@ const Layout = () => {
 
 
     return (
-        <div className='App'>
-            <Sidebar 
-                menuPos={menuPos}
-                handleClick={handleClick}
-                isOpen={isOpen}/>
-            <div className='page'>
-                {/* <span className='tags top-tags'>
-                    &lt;html&gt;
-                    <br />
-                    <span className='top-body'>&lt;body&gt;</span>
-                </span> */}
-                <Outlet />
-                {/* <span className='tags bottom-tags'>
-                    &lt;/body&gt;
-                    <br />
-                    <span className='bottom-tag-html'>&lt;/html&gt;</span>
-                </span> */}
+        <div>
+            <div className='App'>
+                <Sidebar 
+                    menuPos={menuPos}
+                    handleClick={handleClick}
+                    isOpen={isOpen}/>
+                <div className='page'>
+                    {/* <span className='tags top-tags'>
+                        &lt;html&gt;
+                        <br />
+                        <span className='top-body'>&lt;body&gt;</span>
+                    </span> */}
+                    <Outlet />
+                    {/* <span className='tags bottom-tags'>
+                        &lt;/body&gt;
+                        <br />
+                        <span className='bottom-tag-html'>&lt;/html&gt;</span>
+                    </span> */}
+                </div>
+                
             </div>
+            {/* <Footer className="footer"/> */}
+            
         </div>
+    
     )
 }
 
