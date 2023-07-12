@@ -14,33 +14,63 @@ const TimeLine = () => {
     let schoolIcon = <FontAwesomeIcon icon={faGraduationCap} />
 
   
-
-    const motionRefs = useRef([]);
+    const motionRef0 = useRef();
+    const motionRef1 = useRef();
+    const motionRef2 = useRef();
+    const motionRef3 = useRef();
+    const motionRef4 = useRef();
     
-    const isInView = useInView(motionRefs, {once: true});
+    const motionRefSet = [motionRef0, motionRef1, motionRef2, motionRef3, motionRef4]
+    
+    const isInView0 = useInView(motionRef0, {once: true});
+    const isInView1 = useInView(motionRef1, {once: true});
+    const isInView2 = useInView(motionRef2, {once: true});
+    const isInView3 = useInView(motionRef3, {once: true});
+    const isInView4 = useInView(motionRef4, {once: true});
 
     // const isInView = useLater(motionRefs);
 
- 
 
 
+    const mainControls0 = useAnimation();
+    const slideControls0 = useAnimation();
+    const mainControls1 = useAnimation();
+    const slideControls1 = useAnimation();
+    const mainControls2 = useAnimation();
+    const slideControls2 = useAnimation();
+    const mainControls3 = useAnimation();
+    const slideControls3 = useAnimation();
+    const mainControls4 = useAnimation();
+    const slideControls4 = useAnimation();
 
-    const mainControls = useAnimation();
-    const slideControls = useAnimation();
+    const mainControlSet = [mainControls0, mainControls1, mainControls2, mainControls3, mainControls4]
+    const slideControlSet = [slideControls0, slideControls1, slideControls2, slideControls3, slideControls4]
 
     useEffect(() => {
-        if (isInView) {
-            
-            mainControls.start("visible");
-            slideControls.start("visible");
+        if (isInView0) {            
+            mainControls0.start("visible");
+            slideControls0.start("visible");
+        }
+        if (isInView1) {            
+            mainControls1.start("visible");
+            slideControls1.start("visible");
+        }
+        if (isInView2) {            
+            mainControls2.start("visible");
+            slideControls2.start("visible");
+        }
+        if (isInView3) {            
+            mainControls3.start("visible");
+            slideControls3.start("visible");
+        }
+        if (isInView4) {            
+            mainControls4.start("visible");
+            slideControls4.start("visible");
         }
         
-    }, [isInView, mainControls, slideControls])
+        
+    }, [isInView0,isInView1, isInView2, isInView3, isInView4])
 
-  
-
-    
-    
     return (
         <div >
                 
@@ -67,7 +97,9 @@ const TimeLine = () => {
                         >
                             
                             
-                            <div ref={(element) => motionRefs.current.push(element)} >
+                            {/* <div ref={(element) => motionRefs.current.push(element)} > */}
+                            <div ref={motionRefSet[index]}>
+                            {console.log((motionRef1.current))}
                             <motion.div
                                 className={motion}
                                 variants={{
@@ -75,7 +107,7 @@ const TimeLine = () => {
                                     visible: {opacity: 1, y: 0},
                                 }}
                                 initial="hidden"
-                                animate={mainControls}
+                                animate={mainControlSet[index]}
                                 transition={{ duration: 0.5, delay: 0.25 }}
                             
                             >
@@ -117,7 +149,7 @@ const TimeLine = () => {
                                     visible: {left: "100%"},
                                 }}
                                 initial="hidden"
-                                animate={slideControls}
+                                animate={slideControlSet[index]}
                                 transition= {{ duration: 2.0, delay: 0.2, ease: "easeIn"}}
                                 style={{
                                     position: "absolute",
@@ -132,7 +164,6 @@ const TimeLine = () => {
                                 </motion.div>
                             </div> 
                         </VerticalTimelineElement>       
-                            
                         )
                     })
                 }
