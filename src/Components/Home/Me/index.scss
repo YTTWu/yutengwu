@@ -25,16 +25,18 @@
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 468px){
     .home-me {
         position: absolute;
         bottom: 20px;
-        left: 27%;
+        left: 30%;
         border: none;
         border-radius: 10px;
         animation: fadeIn 3s ease-in forwards;
     }
 }
+
+
 
 
 

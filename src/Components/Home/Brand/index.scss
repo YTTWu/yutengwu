@@ -8,6 +8,13 @@
     z-index: 0;
 }
 
+@media(min-width: 469px) and (max-width: 668px) {
+    .layout-brand {
+        left: 37%;
+    }
+    
+}
+
 @media(max-width: 468px) {
     .layout-brand {
         position: absolute;
