@@ -36,6 +36,9 @@ const Layout = () => {
 
     return (
         <div>
+            <a className='about-resume' href="https://docs.google.com/document/d/1SQlUDccAwzaDaZgDKdl6gzOq-T-8eU39T8TgFeHZAaQ/edit?usp=sharing" target='_blank' rel="noopener noreferre">
+                <button >RESUME</button>
+            </a>
             <div className='App'>
                 <Sidebar 
                     menuPos={menuPos}

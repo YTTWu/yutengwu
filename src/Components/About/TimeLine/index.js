@@ -6,7 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import ToolIcon from './ToolIcon';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react';
+import SeagateIcon from '../../../assets/images/Seagate.png';
+import UCRIcon from '../../../assets/images/UCR.png';
+import FoothillIcon from '../../../assets/images/Foothill.png'
+import MSLC from '../../../assets/images/MSLC.png'
 
 const TimeLine = () => {
     let iconStyle = {background: "#ffd700"}
@@ -71,6 +75,7 @@ const TimeLine = () => {
         
     }, [isInView0,isInView1, isInView2, isInView3, isInView4])
 
+
     return (
         <div >
                 
@@ -81,12 +86,27 @@ const TimeLine = () => {
                         let isWorkIcon = eachData.icon === "work"
                         let showButton = eachData.buttonText !== undefined && 
                             eachData.buttonText !== null && eachData.buttonText !== "";
+                        let workImg;
+
+                        if (eachData.company === "Seagate Technology")
+                        {
+                            workImg = SeagateIcon;
+                        }
+                        else if (eachData.company === "University of California Riverside") {
+                            workImg = UCRIcon;
+                        }
+                        else if (eachData.company === "Foothill College") {
+                            workImg = FoothillIcon;
+                        }
+                        else if (eachData.company === "Mustard Seed Learning Center") {
+                            workImg = MSLC
+                        }
                         
                         return (
                             
                             <VerticalTimelineElement
                                                         
-                            contentStyle={{ height: "400px"}}
+                            // contentStyle={{ height: "430px"}}
                             className='timeline'
                             key={eachData.key}
                             date={eachData.date}
@@ -113,7 +133,7 @@ const TimeLine = () => {
                             >
                                 
                                 <div className='timeline-element-format'>
-                                    <div className='timeline-element-format-icon' >
+                                    {eachData.tool ? <div className='timeline-element-format-icon' >
                                         {eachData.tool.map((eachTool, index) => {
                                             return (
                                                 <div className='icon_'> 
@@ -121,17 +141,23 @@ const TimeLine = () => {
                                                 </div>
                                             )
                                         })}
-                                    </div>
-                                    <h1
+                                    </div> : (<></>)}
+                                    {eachData.company ? <div className='company'>
+                                        <div >
+                                            <img className='company-img' src={workImg} />
+                                        </div>
+                                        <h1>{eachData.company}</h1>
+                                    </div> : (<> </> )}
+                                    <h2
                                         className='vertical-timeline-element-title'>{eachData.title}
-                                    </h1>                            
+                                    </h2>                            
                                     <h3 className='vertical-timeline-element-subtitle'>
                                         {eachData.location}
                                     </h3>
-                                    <p id="description">
+                                    {eachData.Description ? <p id="description">
                                         {eachData.Description}
-                                    </p>
-                                    {
+                                    </p> : (<></>)}
+                                    {/* {
                                         showButton
                                         && 
                                         <a 
@@ -140,7 +166,7 @@ const TimeLine = () => {
                                             > 
                                             Click here 
                                         </a> 
-                                    }
+                                    } */}
                                 </div>
                             </motion.div>
                             <motion.div

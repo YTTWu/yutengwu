@@ -21,28 +21,6 @@
         font-weight: 400;
         letter-spacing: 10px;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1/>';
-            font-family: 'La Belle Aurore';
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1s 1.7s backwards;
-            opacity: 0.6;
-        }
         ._14 {
             margin-right: -30px;
         }
@@ -270,12 +248,7 @@ h2 {
 
         h1 {
             font-size: 22px;
-            &::before {
-                display: none;
-            }
-            &::after {
-                display: none;
-            }
+    
             img {
                 width: 80px;
             }
@@ -313,12 +286,7 @@ h2 {
 
         h1 {
             font-size: 25px;
-            &::before {
-                display: none;
-            }
-            &::after {
-                display: none;
-            }
+            
             img {
                 width: 80px;
             }
@@ -330,7 +298,7 @@ h2 {
 
         .flat-button {
             font-size: 15px;
-            margin-left: 26px;
+            margin-left: 25px;
         }
 
         img {

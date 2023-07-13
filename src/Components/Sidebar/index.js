@@ -76,7 +76,7 @@ const Sidebar = (props) => {
                     </NavLink>
                 </nav>
                 <ul className='nav-linkedin'>
-                    <li>
+                    <li>   
                         <a  
                             
                             href="https://www.linkedin.com/in/yutengwu/"
