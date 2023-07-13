@@ -69,7 +69,7 @@ const About = () => {
                   {showIntro && (
                     <Typed
                       strings={[ myIntro ]}
-                      typeSpeed={20}
+                      typeSpeed={10}
                       />
                   )}                
                 </div>
