@@ -44,6 +44,7 @@ export default function Project() {
         ))}
         <motion.div className="progress" style={{ scaleX }} />
       </div>
+      <div className='footer'></div>
     </>
   );
 }

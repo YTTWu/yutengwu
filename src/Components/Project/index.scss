@@ -160,7 +160,7 @@
   
   .my-app section > div {
     border: 10px dashed yellow;
-    width: 60%;
+    width: 50%;
     height: 100%;
     position: relative;
     max-height: 90vh;
@@ -190,6 +190,10 @@
     border-radius: 15px;
     background: black;
     bottom: 50px;
+  }
+
+  .footer {
+    margin-bottom: 200px;
   }
   
 

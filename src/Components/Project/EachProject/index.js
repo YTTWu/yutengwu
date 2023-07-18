@@ -49,7 +49,7 @@ const EachProject = ({ project }) => {
                         )
                     })
                 }
-                <a className='project-link' href={project.github} target="_blank" rel="noopener noreferre" >
+                <a className='project-github' href={project.github} target="_blank" rel="noopener noreferre" >
                     <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
             </div>
