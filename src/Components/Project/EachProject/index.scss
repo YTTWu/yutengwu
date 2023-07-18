@@ -1,0 +1,105 @@
+.project { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
+    .project-preview {
+        width: 100%; /* Set the desired width for the image container */
+        height: 100%; /* Allow the height to adjust based on the image aspect ratio */
+        border: 2px solid black;
+        
+    }
+
+    .project-title {
+        width: auto;
+        letter-spacing: 1px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        // color: #1db954;
+        border-radius: 15px;
+        padding: 5px;        
+    }
+
+    .project-link {
+        width: 80%; 
+        height: 50%; 
+        
+    }
+
+    .project-description {
+        background-color: #b8dbed;
+        margin-top: 20px;
+        width: 80%; 
+        min-height: 15%;
+        max-height: 35%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+        // border: 2px solid black;
+    }
+
+    .project-tool {
+        margin-top: 20px;
+        width: 80%;
+        height: 5%;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        .icon_ {
+            margin-bottom: 30px;
+            margin-right: 120px;
+        }
+
+        .project-link {
+            margin-left: 30px;
+            svg {
+                font-size: 28px;
+                color: #FAF33E;
+            }
+        }
+    }
+
+    .project-contributor {
+        // border: 4px solid black;
+        width: 80%;
+        height: 15%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .spotability {
+        background: url("../../../assets/images/Spotibility.png");
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    .kusa {
+        background: url("../../../assets/images/Kusa.gif");
+        background-size: 180%;
+        background-position: center;
+        border-radius: 15px;
+    }
+
+    .CS180 {
+        background: url("../../../assets/images/CS180.png");
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    .chess {
+        background: url("../../../assets/images/Chess.png");
+        background-size: cover;
+        border-radius: 15px;
+    }
+}

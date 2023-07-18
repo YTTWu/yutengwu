@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Sidebar from '../Sidebar'
 import './index.scss'
 import Footer from './Footer'
+import Brand from './Brand'
 
 
 
@@ -36,9 +37,10 @@ const Layout = () => {
 
     return (
         <div>
-            <a className='about-resume' href="https://docs.google.com/document/d/1SQlUDccAwzaDaZgDKdl6gzOq-T-8eU39T8TgFeHZAaQ/edit?usp=sharing" target='_blank' rel="noopener noreferre">
-                <button >RESUME</button>
-            </a>
+            
+            <Brand />
+            
+            
             <div className='App'>
                 <Sidebar 
                     menuPos={menuPos}

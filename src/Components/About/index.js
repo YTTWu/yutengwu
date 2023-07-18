@@ -6,19 +6,19 @@ import TimeLine from './TimeLine'
 import { useEffect, useState, useRef } from 'react'
 import Typed from 'react-typed'
 import { motion, useAnimation, useInView } from 'framer-motion';
-import resume from '../../assets/data/Yuteng_Wu_Resume.pdf'
+
 
 
 const About = () => {
   const [showIntro, setShowIntro] = useState(false);
   
-  const myIntro = `Hello there! Welcome to my website. My name is Yuteng Wu and I am a resent compuster science graduate from UC Riverside. <br><br> 
-    I am current seeking for a full-time software engineer role job. I like both front-end and back-end work.
-    I am profitient in C/C++, python, javascript and other tool and frameworks. <br><br>
-    I was born in China, immigrated to the US when I was 16 year old without knowing how to speak any English.
-    I think one of my biggest accomplishment is me being able to speak English fluently tody. <br><br>
-    I was also a profesisonal badminton player, represented the US in multiple international competetions. <br><br>
-    Last but not least, I love video games and exercising.
+  const myIntro = `Hello there! Welcome to my website. My name is Yuteng Wu and I am a recent computer science graduate from UC Riverside. <br><br> 
+    I am current seeking a full-time software engineer role. I enjoy both front-end and back-end work.
+    I am proficient in C/C++, Python, Javascript and other various tools and frameworks. <br><br>
+    I was born in China and immigrated to the United States when I was 16 year old without knowing how to speak any English.
+    One of my greatest accomplishments being able to speak English fluently today. <br><br>
+    I was also a professional badminton player, representing the U.S. in multiple international competitions. <br><br>
+    Last but certainly not least, I love video games and exercising.
     `
   
   useEffect(() => {
@@ -57,7 +57,7 @@ const About = () => {
     return(
         <div>
             <Loader type="pacman" />
-            <Brand />
+            {/* <Brand /> */}
 
             
             <div className='about'>

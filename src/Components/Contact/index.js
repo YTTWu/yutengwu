@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <Loader type="pacman" />
-            <Brand />
+            {/* <Brand /> */}
             <div className='message'>
                 <h2 className='text'>Hi, thank you for visiting</h2>
                 <h2 className='text'>Email: yutengwu.dev@gmail.com</h2>

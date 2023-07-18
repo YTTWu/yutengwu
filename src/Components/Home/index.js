@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <>
             <Loader type="pacman" />
-            <Brand />
+            {/* <Brand /> */}
             <div className="container home-page">
                 <div className="text-zone">
                     <h1>

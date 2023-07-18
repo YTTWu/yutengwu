@@ -33,7 +33,7 @@ textarea {
 
 .loader-active {
   display: block;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin: auto;
@@ -43,4 +43,5 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+  z-index: 99999;
 }
