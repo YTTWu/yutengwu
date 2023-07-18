@@ -20,3 +20,14 @@
 //         max-width: 150px;
 //     }
 // }
+
+@media (max-height: 1000px) {
+    .icon {
+        // width: 90px;
+        // height: 40px;
+        min-width: 90px;
+        max-width: 150px;
+        font-size: 15px;
+    }
+}
+
