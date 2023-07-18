@@ -1,6 +1,6 @@
 import './index.scss'
 import Spotability from "../../../assets/images/Spotibility.png"
-import ToolIcon from '../../About/TimeLine/ToolIcon';
+import ToolIcon from '../ToolIcon'
 import Contributor from '../Contributor' 
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -44,7 +44,7 @@ const EachProject = ({ project }) => {
                     project.tool.map(eachTool => {
                         return (
                             <div className='icon_'>
-                                <ToolIcon name={eachTool}/>
+                                <ToolIcon className="toolcon_" name={eachTool}/>
                             </div>
                         )
                     })

@@ -12,8 +12,6 @@
         font-size: 50px;
     }
 
-
-
     h3 {
         font-size: 20px;
         
@@ -21,4 +19,15 @@
 }
 
 
+@media (max-width: 466px) {
+    .each-contributor {
+        svg {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 15px
+        }
+    }
+}
 

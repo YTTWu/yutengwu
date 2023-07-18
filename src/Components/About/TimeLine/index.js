@@ -119,7 +119,6 @@ const TimeLine = () => {
                             
                             {/* <div ref={(element) => motionRefs.current.push(element)} > */}
                             <div ref={motionRefSet[index]}>
-                            {console.log((motionRef1.current))}
                             <motion.div
                                 className={motion}
                                 variants={{

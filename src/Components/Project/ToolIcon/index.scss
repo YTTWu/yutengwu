@@ -5,7 +5,6 @@
     max-width: 150px;
     background-color: #b8dbed;
     border: 2px solid black;
-    position: absolute;
     border-radius: 15px;
     font-size: 20px;
     display: flex;
@@ -13,3 +12,11 @@
     align-items: center;
     font-weight: bold;
 }
+
+// @media (max-width: 466px) {
+//     .icon {
+//         font-size: 10px;
+//         min-width: 60px;
+//         max-width: 150px;
+//     }
+// }

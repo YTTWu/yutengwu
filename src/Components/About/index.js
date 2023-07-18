@@ -47,7 +47,6 @@ const About = () => {
     const slideControls = useAnimation();
     
     useEffect(() => {
-      console.log(isInView)
         if (isInView) {
             mainControls.start("visible");
             slideControls.start("visible");
