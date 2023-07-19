@@ -31,6 +31,8 @@
 
     .project-link {
         max-width: 600px;
+        min-width: 200px;
+        min-height: 200px;
         width: 80%; 
         height: 50%; 
     }
@@ -92,8 +94,9 @@
 
     .kusa {
         background: url("../../../assets/images/Kusa.gif");
-        background-size: 180%;
+        background-size: 220%;
         background-position: center;
+        background-repeat: no-repeat;
         border-radius: 15px;
     }
 
@@ -150,12 +153,12 @@
             font-size: 16px;
         }
         .project-description {
-            min-height: 45%;
+            min-height: 25%;
         }
 
         .project-link {
             width: 40%;
-            height: 30%;
+            height: 20%;
         }
 
         .project-tool {

@@ -167,10 +167,19 @@
     max-height: 90vh;
     margin: 20px;
     background: #b8dbed;
-    overflow: hidden;
+    overflow: auto;
     z-index: 99;
     border-radius: 15px;
   }
+
+  .my-app section > div::-webkit-scrollbar-thumb {
+    background-color: #b8dbed;
+  }
+
+  .my-app section > div::-webkit-scrollbar {
+  width: 10px;
+  background-color: #b8dbed;
+}
   
   .my-app img {
     position: absolute;
